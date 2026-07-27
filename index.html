@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Для Вероники с любовью</title>
+  <meta name="description" content="Романтическая страница для самой любимой девушки" />
+  <meta name="theme-color" content="#fff5f7" />
+
+  <!-- Открытие в соцсетях -->
+  <meta property="og:title" content="Для Вероники с любовью" />
+  <meta property="og:description" content="Маленький сюрприз от того, кто тебя очень любит" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Плавающие сердечки на фоне -->
+  <div class="hearts-bg" aria-hidden="true"></div>
+
+  <main>
+    <!-- Экран приветствия -->
+    <section class="hero" id="hero">
+      <p class="hero__eyebrow">для самой любимой</p>
+      <h1 class="hero__title">Вероника</h1>
+      <p class="hero__subtitle">
+        Эта маленькая страница про то, как сильно я тебя люблю и ценю.
+      </p>
+      <div class="hero__scroll" aria-hidden="true">
+        <span>листай вниз</span>
+        <span class="hero__arrow">&#8595;</span>
+      </div>
+    </section>
+
+    <!-- Письмо -->
+    <section class="letter" id="letter">
+      <div class="letter__card">
+        <h2 class="section-title">Несколько слов от сердца</h2>
+        <p>
+          Ты делаешь мою жизнь теплее и светлее.
+          Рядом с тобой обычные дни превращаются в самые любимые воспоминания.
+        </p>
+        <p>
+          Спасибо, что ты есть. Спасибо за твою улыбку, за поддержку,
+          за то, что ты это ты. Я ценю каждую минуту рядом с тобой
+          и хочу, чтобы ты знала это каждый день, а не только сегодня.
+        </p>
+        <p class="letter__signature">Люблю тебя. Твой навсегда.</p>
+      </div>
+    </section>
+
+    <!-- Таймер -->
+    <section class="together" id="together">
+      <h2 class="section-title">Сколько мы уже вместе</h2>
+      <p class="together__hint">и это только начало</p>
+      <div class="counter" id="counter" role="timer" aria-live="polite">
+        <div class="counter__item">
+          <span class="counter__num" id="days">0</span>
+          <span class="counter__label">дней</span>
+        </div>
+        <div class="counter__item">
+          <span class="counter__num" id="hours">0</span>
+          <span class="counter__label">часов</span>
+        </div>
+        <div class="counter__item">
+          <span class="counter__num" id="minutes">0</span>
+          <span class="counter__label">минут</span>
+        </div>
+        <div class="counter__item">
+          <span class="counter__num" id="seconds">0</span>
+          <span class="counter__label">секунд</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- За что я тебя люблю -->
+    <section class="reasons" id="reasons">
+      <h2 class="section-title">За что я тебя люблю</h2>
+      <ul class="reasons__list" id="reasonsList"></ul>
+    </section>
+
+    <!-- Финал -->
+    <section class="final" id="final">
+      <h2 class="final__title">Ты моё самое любимое «навсегда»</h2>
+      <button class="final__btn" id="loveBtn" type="button">Нажми меня &#10084;</button>
+      <p class="final__message" id="loveMessage" hidden>Я люблю тебя, Вероника &#10084;</p>
+    </section>
+
+    <footer class="footer">
+      <p>Сделано с любовью &#10084;</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
